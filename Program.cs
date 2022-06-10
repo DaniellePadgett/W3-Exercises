@@ -3,17 +3,19 @@
 	public static void Main()
 	{
 
-		int number;
+		double celsius;
+		double kelvin;
+		double fahrenheit;
 
-		Console.Write("Please enter any number below\n");
-		number = Convert.ToInt32(Console.ReadLine());
+		Console.Write("Please enter any temperature below\n");
+		celsius = Convert.ToDouble(Console.ReadLine());
+
+		kelvin = celsius + 273.15;
+		fahrenheit = (celsius / 5) * 9 + 32;
 
 
-		Console.Write($"{number}{number}{number}\n");
-		Console.Write($"{number} {number}\n");
-		Console.Write($"{number} {number}\n");
-		Console.Write($"{number} {number}\n");
-		Console.Write($"{number}{number}{number}\n");
+		Console.Write($"Kelvin = {kelvin}\n");
+		Console.Write($"Fahrenheit  = {fahrenheit}\n");
 
 
 	}
