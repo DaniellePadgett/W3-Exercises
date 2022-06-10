@@ -3,21 +3,22 @@
 	public static void Main()
 	{
 
-		int number1;
-		Console.Write("\nInput your chosen Number : ");
+		int number1, number2, number3, number4, average;
+		Console.Write("\nInput your first chosen number : ");
 		number1 = int.Parse(Console.ReadLine());
 
-		Console.Write($"{number1} x 0 equals: {number1 * 0} \n");
-		Console.Write($"{number1} x 1 equals: {number1 * 1} \n");
-		Console.Write($"{number1} x 2 equals: {number1 * 2} \n");
-		Console.Write($"{number1} x 3 equals: {number1 * 3} \n");
-		Console.Write($"{number1} x 4 equals: {number1 * 4} \n");
-		Console.Write($"{number1} x 5 equals: {number1 * 5} \n");
-		Console.Write($"{number1} x 6 equals: {number1 * 6} \n");
-		Console.Write($"{number1} x 7 equals: {number1 * 7} \n");
-		Console.Write($"{number1} x 8 equals: {number1 * 8} \n");
-		Console.Write($"{number1} x 9 equals: {number1 * 9} \n");
-		Console.Write($"{number1} x 10 equals: {number1 * 10} \n");
+		Console.Write("\nInput your second chosen number : ");
+		number2 = int.Parse(Console.ReadLine());
+
+		Console.Write("\nInput your third chosen number : ");
+		number3 = int.Parse(Console.ReadLine());
+
+		Console.Write("\nInput your fourth chosen number : ");
+		number4 = int.Parse(Console.ReadLine());
+
+		average = (number1 + number2 + number3 + number4) / 4;
+
+		Console.Write($"The average of {number1}, {number2}, {number3} and {number4} is: {average} \n");
 
 		Console.Read();
 
