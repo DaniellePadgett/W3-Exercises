@@ -3,13 +3,16 @@
 	public static void Main()
 	{
 
-		int age;
+		int number;
 
-		Console.Write("How old are you? Please enter your age below\n");
-		age = Convert.ToInt32(Console.ReadLine());
+		Console.Write("Please enter any number below\n");
+		number = Convert.ToInt32(Console.ReadLine());
 
 
-		Console.Write($"You look older than {age}....");
+		Console.Write($"{number} {number} {number} {number}\n");
+		Console.Write($"{number}{number}{number}{number}\n");
+		Console.Write($"{number} {number} {number} {number}\n");
+		Console.Write($"{number}{number}{number}{number}\n");
 
 	}
 }
