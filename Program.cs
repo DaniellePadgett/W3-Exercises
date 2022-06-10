@@ -3,24 +3,19 @@
 	public static void Main()
 	{
 
-		int number1, number2, number3, number4, average;
-		Console.Write("\nInput your first chosen number : ");
-		number1 = int.Parse(Console.ReadLine());
+		int number1, number2, number3;
 
-		Console.Write("\nInput your second chosen number : ");
-		number2 = int.Parse(Console.ReadLine());
+		Console.Write("Enter first number - ");
+		number1 = Convert.ToInt32(Console.ReadLine());
 
-		Console.Write("\nInput your third chosen number : ");
-		number3 = int.Parse(Console.ReadLine());
+		Console.Write("Enter second number - ");
+		number2 = Convert.ToInt32(Console.ReadLine());
 
-		Console.Write("\nInput your fourth chosen number : ");
-		number4 = int.Parse(Console.ReadLine());
+		Console.Write("Enter third number - ");
+		number3 = Convert.ToInt32(Console.ReadLine());
 
-		average = (number1 + number2 + number3 + number4) / 4;
-
-		Console.Write($"The average of {number1}, {number2}, {number3} and {number4} is: {average} \n");
-
-		Console.Read();
+		Console.Write("Result of specified numbers {0}, {1} and {2}, (x+y)·z is {3} and x·y + y·z is {4}\n\n",
+			number1, number2, number3, ((number1 + number2) * number3), (number1 * number2 + number2 * number3));
 
 	}
 }
