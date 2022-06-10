@@ -13,7 +13,7 @@
 
 		Console.Write("\nFirst Number multiplied by 2: " + number1 * 2);
 		Console.Write("\nSecond Number multiplied by 3: " + number2 * 3);
-		Console.Write("\nThird Number multiplied by 6: " + number2 * 6);
+		Console.Write("\nThird Number multiplied by 6: " + number3 * 6);
 		Console.Read();
 
 	}
