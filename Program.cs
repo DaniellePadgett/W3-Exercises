@@ -3,7 +3,7 @@
 	public static void Main()
 	{
 
-		int number1, number2;
+		int number1;
 		Console.Write("\nInput your chosen Number : ");
 		number1 = int.Parse(Console.ReadLine());
 
