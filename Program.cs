@@ -9,10 +9,12 @@
 		number = Convert.ToInt32(Console.ReadLine());
 
 
-		Console.Write($"{number} {number} {number} {number}\n");
-		Console.Write($"{number}{number}{number}{number}\n");
-		Console.Write($"{number} {number} {number} {number}\n");
-		Console.Write($"{number}{number}{number}{number}\n");
+		Console.Write($"{number}{number}{number}\n");
+		Console.Write($"{number} {number}\n");
+		Console.Write($"{number} {number}\n");
+		Console.Write($"{number} {number}\n");
+		Console.Write($"{number}{number}{number}\n");
+
 
 	}
 }
