@@ -3,19 +3,16 @@
 	public static void Main()
 	{
 
-		double celsius;
-		double kelvin;
-		double fahrenheit;
-
-		Console.Write("Please enter any temperature below\n");
-		celsius = Convert.ToDouble(Console.ReadLine());
-
-		kelvin = celsius + 273.15;
-		fahrenheit = (celsius / 5) * 9 + 32;
 
 
-		Console.Write($"Kelvin = {kelvin}\n");
-		Console.Write($"Fahrenheit  = {fahrenheit}\n");
+		Console.WriteLine(remove_char("Danielle", 1));
+		Console.WriteLine(remove_char("Danielle", 7));
+		Console.WriteLine(remove_char("Danielle", 0));
+	}
+	public static string remove_char(string name, int n)
+	{
+		return name.Remove(n, 1);
+
 
 
 	}
