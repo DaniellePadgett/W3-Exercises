@@ -5,11 +5,11 @@
 
 
 
-		Console.WriteLine(remove_char("Danielle", 1));
-		Console.WriteLine(remove_char("Danielle", 7));
-		Console.WriteLine(remove_char("Danielle", 0));
+		Console.WriteLine(RemoveString("Danielle", 1));
+		Console.WriteLine(RemoveString()r("Danielle", 7));
+		Console.WriteLine(RemoveString("Danielle", 0));
 	}
-	public static string remove_char(string name, int n)
+	public static string RemoveString(string name, int n)
 	{
 		return name.Remove(n, 1);
 
