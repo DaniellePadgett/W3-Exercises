@@ -2,18 +2,13 @@
 {
 	public static void Main()
 	{
-
-
-
-		Console.WriteLine(RemoveString("Danielle", 1));
-		Console.WriteLine(RemoveString("Danielle", 7));
-		Console.WriteLine(RemoveString("Danielle", 0));
+		Console.WriteLine(CharacterSwap("Danielle"));
+		Console.WriteLine(CharacterSwap("Padgett"));
+		Console.WriteLine(CharacterSwap("x"));
 	}
-	public static string RemoveString(string name, int n)
+	public static string CharacterSwap(string namePosition)
 	{
-		return name.Remove(n, 1);
-
-
-
+		return namePosition.Length > 1
+			? namePosition.Substring(namePosition.Length - 1) + namePosition.Substring(1, namePosition.Length - 2) + namePosition.Substring(0, 1) : namePosition;
 	}
 }
