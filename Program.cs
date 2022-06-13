@@ -2,14 +2,17 @@
 {
 	public static void Main()
 	{
-		string name;
-		int nameIndex = 0;
-		Console.Write("Input a string : ");
-		name = Console.ReadLine();
-		if (name.Length >= 1)
-		{
-			var s = name.Substring(0, 1);
-			Console.WriteLine(s + name + s);
-		}
+
+		int int1;
+		int int2;
+
+		Console.WriteLine("Input first integer : ");
+		int1 = Convert.ToInt32(Console.ReadLine());
+
+		Console.WriteLine("Input second integer : ");
+		int2 = Convert.ToInt32(Console.ReadLine());
+
+		Console.WriteLine("Check if one is negative and one is positive:");
+		Console.WriteLine((int1 < 0 && int2 > 0) || (int1 > 0 && int2 < 0));
 	}
 }
