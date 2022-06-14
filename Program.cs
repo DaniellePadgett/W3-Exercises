@@ -2,12 +2,19 @@
 {
 	public static void Main()
 	{
-		Console.WriteLine(SumTriple(2, 2));
-		Console.WriteLine(SumTriple(12, 10));
-		Console.WriteLine(SumTriple(-5, 2));
+		Console.WriteLine(result(13, 40));
+		Console.WriteLine(result(50, 21));
+		Console.WriteLine(result(0, 23));
 	}
-	public static int SumTriple(int a, int b)
+
+	public static int result(int a, int b)
 	{
-		return a == b ? (a + b) * 3 : a + b;
+		if (a > b)
+		{
+			return (a - b) * 2;
+		}
+		return b - a;
 	}
+
+
 }
