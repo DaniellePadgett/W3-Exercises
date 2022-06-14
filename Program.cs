@@ -2,10 +2,21 @@
 {
 	public static void Main()
 	{
-		Console.WriteLine("\n Please enter a string of text: ");
-		string stringLine = Console.ReadLine();
+		string line = "I'm Danielle and my Audi is a bit old lol";
+		string[] words = line.Split(new[] { " " }, StringSplitOptions.None);
+		string word = "";
+		int ctr = 0;
 
-		Console.WriteLine(stringLine.ToLower());
+		foreach (String s in words)
+		{
+			if (s.Length > ctr)
+			{
+				word = s;
+				ctr = s.Length;
+			}
+		}
+
+		Console.WriteLine(word);
 	}
 
 
