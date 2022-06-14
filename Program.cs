@@ -2,17 +2,10 @@
 {
 	public static void Main()
 	{
-		Console.WriteLine("\nInput an integer:");
-		int x = Convert.ToInt32(Console.ReadLine());
-		Console.WriteLine(result(x));
+		Console.WriteLine("\n Please enter a string of text: ");
+		string stringLine = Console.ReadLine();
 
-	}
-
-	public static bool result(int n)
-	{
-		if (Math.Abs(n - 100) <= 20 || Math.Abs(n - 200) <= 20)
-			return true;
-		return false;
+		Console.WriteLine(stringLine.ToLower());
 	}
 
 
