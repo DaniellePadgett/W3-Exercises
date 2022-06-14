@@ -2,16 +2,17 @@
 {
 	public static void Main()
 	{
-		int x, y;
-		int result;
-
 		Console.WriteLine("\nInput an integer:");
-		x = Convert.ToInt32(Console.ReadLine());
-		Console.WriteLine("Input another integer:");
-		y = Convert.ToInt32(Console.ReadLine());
+		int x = Convert.ToInt32(Console.ReadLine());
+		Console.WriteLine(result(x));
 
-		Console.WriteLine(x == 20 || y == 20 || (x + y == 20));
+	}
 
+	public static bool result(int n)
+	{
+		if (Math.Abs(n - 100) <= 20 || Math.Abs(n - 200) <= 20)
+			return true;
+		return false;
 	}
 
 
